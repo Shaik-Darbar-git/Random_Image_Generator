@@ -15,6 +15,6 @@ author = filtered_data['author']
 url = filtered_data['download_url']
 
 if st.button("Generate Random Image"):
-    st.image(url, caption="Here's your random image!", use_column_width=True)
-    st.subheader(f"Author of the Image is : {author}")
+    st.image(url, caption="Here's your random image!", use_container_width=True)
+    st.subheader(f"Author : {author.title()}")
 
